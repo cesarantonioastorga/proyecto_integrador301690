@@ -1,0 +1,221 @@
+/*---------ESTILOS GENERALES---------*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    background-color: rgb(210, 210, 210);
+}
+/*---------FIN ESTILOS GENERALES---------*/
+
+
+/*---------INICIO HEADER---------*/
+header{
+    /* background-color: rgb(107, 2, 112); */
+    background: linear-gradient(312deg, rgba(107,2,112,1) 44%, rgba(0,0,0,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 120px;
+    /* box-shadow: 10px 10px 20px black; */
+}
+header div img{
+    width: 150px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+/*
+header nav ul li{
+    display: inline;
+}*/
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+/*---------FIN HEADER---------*/
+
+
+
+/*---------INICIO MAIN---------*/
+
+/*cards*/
+main {
+    background-image: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:initial;
+    padding: 0 120px;
+}
+main section {
+    
+    /*
+    background: linear-gradient(90deg, rgba(12,211,235,1) 0%, rgba(9,9,121,1) 35%, rgba(5,39,187,1) 67%, rgba(0,212,255,1) 100%);
+    */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+    /*
+    flex-wrap: wrap; 
+    */
+}
+main section .card {
+    background-color: white;
+    width: 300px;
+    margin: 20px;
+    height: 500px;
+    /* 
+    display: inline-block; 
+    */
+    /* box-shadow: 10px 10px 20px rgb(215, 215, 215) */
+}
+/* main section #alMedio {
+    display: none;
+} */
+main section .card div img {
+    width: 100%;
+}
+
+main section .card .container-img{
+    overflow: hidden;
+}
+
+main section .card .container-img img{
+    transition: .5s;
+}
+
+main section .card .container-img img:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+main section .card .card-container {
+    padding: 10px 20px 20px;
+    font-size: 16px;
+}
+
+main section .card .card-container p {
+    color: rgb(190, 109, 183);
+    /*
+    color: aqua;
+    color: rgba(190, 109, 183, 0.5);
+    color: #ffffff;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: capitalize;
+    text-decoration: underline; 
+    */
+}
+main section .card .button-container{
+    padding: 10px 20px 10px;
+}
+
+main section .card .button-container button {
+    background-color: rgb(107, 2, 112);
+    color: white;
+    border: 1px solid rgb(107, 2, 112);
+    border-radius: 5px;
+    padding: 5px 20px;
+    box-shadow: 0 0 10px rgb(152, 152, 152);
+    transition: .5s;
+}
+
+main section .card .button-container button:hover{
+    cursor: pointer;
+    background-color: rgb(190, 109, 183);
+    border-color: rgb(190, 109, 183);
+    
+}
+
+
+main section .card .card-container h2{
+    font-size: 2em;
+}
+/*---------FIN MAIN---------*/
+
+/*----------ENVIOS----------*/
+
+
+#envios {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: rgb(107, 2, 112);
+    color: white;
+    /*
+    
+    */
+}
+#envios div {
+    /*
+    width: 25%;
+    */
+}
+#envios div ul{
+    list-style-type:none;
+    list-style-image: url('../img/garrapata.png');
+    margin: 10px 0 0 20px;
+    list-style-position: inside;
+    /*
+    */
+}
+#envios div ul li {
+    /*
+    background: url('../img/garrapata.png') no-repeat;
+    background-size: 16px;
+    padding-left: 20px;
+    */
+}
+/*-------FIN ENVIOS--------*/
+
+
+/*---------FOOTER---------*/
+#footer{
+    background-color: blue;
+}
+.footer{
+    background-color: red;
+}
+footer {
+    background-color: black!important;
+    padding: 20px 0;
+}
+
+
+
+
+footer div p{
+    color: white;
+    text-align: center;
+}
+/*---------FIN FOOTER---------*/
+
+/* .lorem {
+    height: 150px;
+    width: 150px;
+    resize: both;
+    overflow: scroll;
+    border: 1px solid white;
+} */
+
+/*----------------------MEDIA QUERIES --------------------*/
+
+@media screen and (max-width: 768px){
+    header {
+        flex-direction: column;
+    }
+    header nav {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    
+}
